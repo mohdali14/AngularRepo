@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
+import { MovieComponent } from "./movie/movie.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, RouterOutlet, PostComponent],
+  imports: [NavbarComponent, RouterOutlet, PostComponent, MovieComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
