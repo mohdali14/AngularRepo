@@ -1,2 +1,46 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+
+<!-- basic home about contact pages-->
+<!-- <app-navbar></app-navbar>
+<router-outlet></router-outlet> -->
+
+<!-- control flow class if and for and switch-->
+ <div class="h-screen flex items-center justify-center page-container">
+   
+   <!-- if class control flow -->
+    <!-- @if(userRole === 'admin'){
+
+        <h3>Welcome Admin</h3>
+    }
+    @else {
+
+        <h3> welcome All</h3>
+    } -->
+
+    <!-- for loop sample-->
+    <!-- <ul>
+        @for (product of productList; track product.name) 
+        {
+            <li class ="text-gray-100 text-2xl">{{product.id}} - {{product.name}}</li>
+        }
+        @empty {
+            <li>There are no items.</li>
+        }
+    </ul> -->
+
+    <!-- switch loop  -->
+
+    @switch (shippingMethod) {
+
+        @case ("standard") {
+            <h3>your shipping cost is 5.99</h3>
+        }
+        @case ("express") {
+            <h3>your shipping cost is 1.00</h3>
+        }
+        @default {
+            <h3>Invalid shipping method!</h3>
+        }
+    }
+
+
+</div>

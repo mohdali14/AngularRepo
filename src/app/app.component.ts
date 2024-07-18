@@ -11,4 +11,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent {
   title = 'my-angular-app';
+
+  /* if loop */
+  userRole : string ='admin';
+
+
+  /* for loop */
+  productList =[
+    {id : 1 , name: 'I phone'},
+    {id : 2 , name: 'Samsung'},
+    {id : 3 , name: 'LG'},
+    {id : 4 , name: 'Motorola'},
+  ];
+
+  /* swithc */
+
+  shippingMethod : string ="standard";
+
+
 }
