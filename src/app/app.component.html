@@ -5,8 +5,8 @@
 <!-- END basic routing class home about contact pangenpotfound pages-->
 
 
-<!-- control flow class if and for and switch just on app.componet html-->
- <!-- <div class="h-screen flex items-center justify-center page-container"> -->
+<!-- BEGIN control flow class if and for and switch just on app.componet html-->
+    <!-- <div class="h-screen flex items-center justify-center page-container"> -->
    
    <!-- if class control flow -->
     <!-- @if(userRole === 'admin'){
@@ -45,18 +45,45 @@
     } -->
 
 
-<!-- </div> -->
-
+    <!-- </div> -->
 
 <!--END  control flow class if and for and switch just on app.componet html-->
 
 
 
-<!-- fetch data API video 7 from php nodetuts from componets : Post  -->
+<!-- fetch data API video 7 from php nodetuts from componets : Post and video defer class for post component  -->
     <!-- <h3>Angular</h3> -->
-
     <!-- <app-post ngSkipHydration></app-post> -->
+
     <!-- 
     <app-movie></app-movie> -->
-
  <!--  END fetch data API video 7 from php nodetuts from componets : Post  -->
+
+
+ <!-- begin defer video on post component-->
+        <!-- @defer  {
+
+                <app-post ngSkipHydration></app-post>
+            } --> 
+                
+            <!-- <button class="w-full bg-cyan-500 text-white bg-indigo-500 border-0 py-2 px-4">sample</button>
+            @defer (on timer(3000ms))  {
+
+                <app-post ngSkipHydration></app-post>
+            } -->
+
+            <!-- defer interaction on button click-->
+                <!-- <button class="w-full bg-cyan-500 text-white bg-indigo-500 border-0 py-2 px-4" #load>sample</button>
+                @defer (on interaction(load))  {
+
+                    <app-post ngSkipHydration></app-post>
+                } -->
+
+            <!-- HOVER -->
+                <!-- <button class="w-full bg-cyan-500 text-white bg-indigo-500 border-0 py-2 px-4" #load>sample</button>
+                @defer (on hover(load))  {
+
+                    <app-post ngSkipHydration></app-post>
+                } -->
+
+  <!-- END defer video on post component-->
